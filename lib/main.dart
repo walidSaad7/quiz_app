@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/appScreen.dart';
+import 'package:quiz_app/loginScreen.dart';
 
 void main(){
   runApp(QuizApp());
@@ -10,8 +11,9 @@ class QuizApp extends StatelessWidget{
     return MaterialApp(
       title: 'Quiz App',
       routes:{ AppScreen.routName:(buildcontext)=>AppScreen(),
+        Login.routName:(buildcontext)=>Login()
       },
-      initialRoute:AppScreen.routName ,
+      initialRoute:Login.routName ,
 );
 }
 }
